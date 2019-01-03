@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="Extract-SC-Target-URL" mapIdentifier="EPAuthentication_SharedFlow_KVM">
+    <DisplayName>Extract SC Target URL</DisplayName>
+    <Properties/>
+    <Get assignTo="scURL">
+        <Key>
+            <Parameter>scURL</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="8" name="AuthenticateUser">
+    <Basepaths>/authenticateuser</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1543851882160</CreatedAt>
+    <CreatedBy>samina.shaikh@newellco.com</CreatedBy>
+    <Description>This API proxy is for authenticating the User to EP, it works for both guest and registered users</Description>
+    <DisplayName>EPAuthenticateUser</DisplayName>
+    <LastModifiedAt>1546450630380</LastModifiedAt>
+    <LastModifiedBy>bibin.vijayaratnan@newellco.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:89a24239cd114d15c574b8dd6602c86929ee54839efe24f055f3a295b0a083793a0babc86b0e615b1bcf4ab94714eb2115b9817bb22bda2811e85bf92af3b16a</ManifestVersion>
+    <Policies>
+        <Policy>Assign-SC-parms</Policy>
+        <Policy>AssignPayload</Policy>
+        <Policy>Call-Authenticate-Service</Policy>
+        <Policy>Extract-Access-Token</Policy>
+        <Policy>Extract-target-URL</Policy>
+        <Policy>Raise-SC-error</Policy>
+        <Policy>Raise-bad-grant-type</Policy>
+        <Policy>ResponseHandler</Policy>
+        <Policy>Verify-API-Key-EPAuthenticateUser</Policy>
+        <Policy>add-cors</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://respHandler.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

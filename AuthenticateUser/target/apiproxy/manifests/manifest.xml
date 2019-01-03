@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Assign-SC-parms" version="SHA-512:155a9dde6e28b87da7d194623783873a0d4dfcca186c18b7f1db6d9f6308e65b5edd62410e4601166fa26cfeb7dc528caae87843671cafc80040e57dfb322795"/>
+        <VersionInfo resourceName="AssignPayload" version="SHA-512:9c62a2d80ad3bc8ff3c031615e19771791623c88c93bab8c4c8809a511c94d65b151ea3acacf7cb962713fa455ae030bbe11c80cec734368a452b79dd79f4c3d"/>
+        <VersionInfo resourceName="Call-Authenticate-Service" version="SHA-512:50ace5d10e7b51168166ab641859a9b6342ae5f942dccc0f09b5a2580012dd09f4633fe37a2dadaf1c93b591ede5461a25f2767aa4e337bf169c223c0ae8d1bc"/>
+        <VersionInfo resourceName="Extract-Access-Token" version="SHA-512:26fffa052668c88bd21c0707d98022dfb82e1f3d1e380d9442ddf8108b6129e89d47544d95f32c0566b0390a1cd2ad09e49125da7d6636bd172d13eb56ecc0b1"/>
+        <VersionInfo resourceName="Extract-target-URL" version="SHA-512:cb174902a276ffa1a8e701315be066436c5863c30f4d8d47cf48650a89ff89434a4b1a9a141d3880a51a85f2119c9fc0dacbfeadf903a8abec323086e488947d"/>
+        <VersionInfo resourceName="Raise-SC-error" version="SHA-512:160eb5a375729db9b3fc87193cd9dcbb81a6087dbb06849385e2b000c66b91e6e47d22df6f1cfa96738ac98a65e6409d2e622b00d64c7dded517f35d8debf31c"/>
+        <VersionInfo resourceName="Raise-bad-grant-type" version="SHA-512:c48550a8ec6b61069692a2535efb84a6ad2a769ca44a739b52a7c573fef904343b569591406f0cb1fbf3263ce8f10b18eec7c4ff3a449d8c3a23781201db6a8e"/>
+        <VersionInfo resourceName="ResponseHandler" version="SHA-512:31c52749ad3dedd25279aa2ddbe634286bb2ee801867726c709f57e636efabbcebc9ac380f28c5b6790d0d7a64b0576e9bd93acd123d7dd7c4038698dd7c9822"/>
+        <VersionInfo resourceName="Verify-API-Key-EPAuthenticateUser" version="SHA-512:f5ee069fc97d2f0d224cbc922fcfb882fe75acb99605b474abcc85dab335fd8528ed00272e163df5dc2d0116e4b2f2930f6913546c8f16ab760e9a620d78c1fa"/>
+        <VersionInfo resourceName="add-cors" version="SHA-512:09bf4bb86c0efe95dcbd9f9e6dd307cef9eeda5107faede182cfd2d3d471bddc9feba7d679b664e71d122b5a6f6910476226020adf7d5939956c6d3a0cb6ac60"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:16882f2d83d721afdc740f7163a618ef24ac5d4a4d2aaa220df0803eff35c0dbf020824ffaa1ed63b33a7b6cfe7cfa9e13238b8355b55790b52b54897d70b05b"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://respHandler.js" version="SHA-512:e93fbed3f51af38b8d1196037222d0eac21134bad988488aa30035041a41dd08e26c593377418edd48a81b6a1aebd500d86eea64d6710c95c957382cee3ebbc7"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

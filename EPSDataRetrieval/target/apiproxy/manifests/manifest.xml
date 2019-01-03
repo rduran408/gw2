@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Assign-Auth-Headers" version="SHA-512:086cfaffeb974e573aeb62f4f98f51edb7796942950ca4148cc8ddea64c5c983e3acdf4ba1e104a2a8996520a990404556951ad64c6842f46c17e45d00b047fc"/>
+        <VersionInfo resourceName="Assign-Target-URL" version="SHA-512:e83d4419ce6bbc2148e0911eda4f6b78507142a06eea9990b1c0ceba429b3ad8f0ab579affd4c587bb7bc6edc705f245838278e1f5584e227a85932e130fa26a"/>
+        <VersionInfo resourceName="Assign-guest-login-parms" version="SHA-512:961883eeeeeea60568d25d13e077403c550e5a1d549140e104b2577179ade79e0fab2639d4b71b206673704a7c860a73cad3c967d19ee240b887305b40d86f94"/>
+        <VersionInfo resourceName="Call-Authenticate-Service" version="SHA-512:a24abdaf2960a11239571e775ddf4553c3967c3c50c370fd54642a49144e8a65610db35bc5a7c47c43c1b9fd63826ea8531109da090cfb667f0f7afe62e1e77b"/>
+        <VersionInfo resourceName="Extract-Access-Token" version="SHA-512:9e0a5434bed65c362298f33d9bf457a5a0deb3bb70fa7249300f4e5346943b44836cd4a47fe26a4de22a575ad670ba9cfa145f8c9029011c281e1c287f6e1250"/>
+        <VersionInfo resourceName="Extract-Header-Values" version="SHA-512:03b29b5ed7c8daac06be2a43de0bbc40bca95c8b4f52c7fbdb01e5989ee8671e35fac6d99e62fa3f4cd22481621e02d448757994dfb45edf5740cb8105aa9430"/>
+        <VersionInfo resourceName="Extract-SC-Target-URL" version="SHA-512:f26207394234f8806738a54f363b854687f5c0fb505f2a1b5fbf8de374514567dd5b620f7b7bbf1f7e319480c70e7adf4fb456ca028c8bf611818c085b9dd3b2"/>
+        <VersionInfo resourceName="Extract-base-target-URL" version="SHA-512:0b0369352ee2541baa0c76f7e1dd398f4215b7f030f7bd42d8a8d0a44c8cdf0b0662edfde7ea8fd0c8a197710625576badf1002e7d0f08bface6651f04ce91d2"/>
+        <VersionInfo resourceName="ResponseHandler" version="SHA-512:d0303abcc3a3b5740778a1d51dd49ca3936a4040bfede61182e6b642613ed5790d822b3652c20770adee53d958867084449721941846f01f5423d5d4e8aac04f"/>
+        <VersionInfo resourceName="Update-target-URL" version="SHA-512:16ae290e0af9a06e9cd2b15fdfb371e6025e3ddcc6c057ba7932fae14ded03294fa1442b9e97ffdff0c56454a996f7d9b8e3c33a57855cc4e16d68abfab314ed"/>
+        <VersionInfo resourceName="Verify-API-Key-EPDataRetrieval" version="SHA-512:e3755db5f78e646eb0b0d04bc21fc9bc4ca60e4028bd58a66071e7b9899612b0555b7e1a8f7ac34bb42aa9eec341d507d91216e1b5551d1e35f18c0a622a8d0a"/>
+        <VersionInfo resourceName="add-cors" version="SHA-512:971d2dc9bb3086bba471337ba605c35b3c0776a7afd6a7711bab7f1a5da5eb7504928ff673188b9770fa013dba38e067508f17b01003d34a1690b54c241d5a5b"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:048ae34fa1c1159f7859ca735211d8d7c7ddcf4c83ec05d5fbd78d670b1a6bee14d8be2890b183d620540998b72711902ee48075d121e980419240951c84a852"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://responsehandler.js" version="SHA-512:e93fbed3f51af38b8d1196037222d0eac21134bad988488aa30035041a41dd08e26c593377418edd48a81b6a1aebd500d86eea64d6710c95c957382cee3ebbc7"/>
+        <VersionInfo resourceName="jsc://updatetargeturl.js" version="SHA-512:6e7d2029265049a518c563379f65b5d90117e141d8fa5ece9624072b72ecb31456cd3e3ac69d3e4a8ae3c340ce10882ce64b658face030cf73b245c20047841d"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:1b2ffda636e202f58826824c8dd900f03fedabb3654bee520c815ecd1efe8b229084b40dea6ac127ab8ca409a842b0db00bf10bda49b52b78c181f25a471713c"/>
+    </TargetEndpoints>
+</Manifest>

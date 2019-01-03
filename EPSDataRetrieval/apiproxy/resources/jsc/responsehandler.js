@@ -1,0 +1,1 @@
+ context.setVariable('response.header.Access-Control-Allow-Origin','*');

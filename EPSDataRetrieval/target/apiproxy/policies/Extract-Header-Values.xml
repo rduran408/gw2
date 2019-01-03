@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Header-Values">
+    <DisplayName>Extract Header Values</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <Header name="URI">
+        <Pattern ignoreCase="true">{URI}</Pattern>
+    </Header>
+    <Header name="Verb">
+        <Pattern ignoreCase="true">{Verb}</Pattern>
+    </Header>
+    <Header name="Zoom">
+        <Pattern ignoreCase="true">{Zoom}</Pattern>
+    </Header>
+    <Header name="Authorization">
+        <Pattern ignoreCase="true">{Authorization}</Pattern>
+    </Header>
+    <Header name="followlocation">
+        <Pattern ignoreCase="true">{followlocation}</Pattern>
+    </Header>
+    <Header name="store">
+        <Pattern ignoreCase="true">{store}</Pattern>
+    </Header>
+    <Source clearPayload="false">request</Source>
+    <VariablePrefix>check</VariablePrefix>
+</ExtractVariables>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Raise-bad-grant-type">
+    <DisplayName>Raise-bad-grant-type</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="text/plain">This Grant Type is not allowed.Accepted Grant Type is Password Type</Payload>
+            <StatusCode>500</StatusCode>
+            <ReasonPhrase>Server Error</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

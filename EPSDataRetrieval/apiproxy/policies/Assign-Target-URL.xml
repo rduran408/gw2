@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Target-URL">
+    <DisplayName>Assign Target URL</DisplayName>
+    <Properties/>
+    <Set>
+        <Verb>{check.Verb}</Verb>
+    </Set>
+    <Remove>
+        <Headers>
+            <Header name="Authorization"/>
+        </Headers>
+    </Remove>
+    <Add>
+        <Headers>
+            <Header name="Authorization">bearer {check.Authorization}</Header>
+            <Header name="X-Forwarded-Base">https://{forwardURL}/v1/epdataretrieval</Header>
+        </Headers>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

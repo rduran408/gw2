@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-guest-login-parms">
+    <DisplayName>Assign guest login parms</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>grant_type</Name>
+        <Value>password</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>username</Name>
+        <Value/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>password</Name>
+        <Value/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>scope</Name>
+        <Ref>check.store</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>role</Name>
+        <Value>PUBLIC</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

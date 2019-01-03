@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-SC-parms">
+    <DisplayName>Assign SC parms</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>grant_type</Name>
+        <Ref>request.formparam.grant_type</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>username</Name>
+        <Ref>request.formparam.username</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>password</Name>
+        <Ref>request.formparam.password</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>scope</Name>
+        <Ref>request.formparam.scope</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>role</Name>
+        <Ref>request.formparam.role</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

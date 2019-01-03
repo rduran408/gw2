@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Access-Token">
+    <DisplayName>Extract-Access-Token</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="check.Authorization">
+            <JSONPath>$.access_token</JSONPath>
+        </Variable>
+        <Variable name="Role">
+            <JSONPath>$.role</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">ServiceCallout.response</Source>
+</ExtractVariables>

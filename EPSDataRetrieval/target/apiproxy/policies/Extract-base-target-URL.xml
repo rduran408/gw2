@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="Extract-base-target-URL" mapIdentifier="EPDataRetrival_KVM">
+    <DisplayName>Extract base target URL</DisplayName>
+    <Properties/>
+    <Get assignTo="targetURL">
+        <Key>
+            <Parameter>targetserver</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="forwardURL">
+        <Key>
+            <Parameter>forwardurl</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

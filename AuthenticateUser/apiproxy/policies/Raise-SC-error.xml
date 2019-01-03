@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Raise-SC-error">
+    <DisplayName>Raise-SC-error</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="{contentformat}">{ServiceCallout.response}</Payload>
+            <StatusCode>400</StatusCode>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

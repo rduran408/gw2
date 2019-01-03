@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Auth-Headers">
+    <DisplayName>Assign Auth Headers</DisplayName>
+    <Properties/>
+    <Add>
+        <Headers>
+            <Header name="Authorization">{check.Authorization}</Header>
+            <Header name="Role">{Role}</Header>
+        </Headers>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

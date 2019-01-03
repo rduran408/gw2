@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="EPDataRetrival">
+    <Basepaths>/epdataretrival</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1543947665202</CreatedAt>
+    <CreatedBy>samina.shaikh@newellco.com</CreatedBy>
+    <Description>This generic API is for all the data retrievals from EP based on the Query passed from CMS.</Description>
+    <DisplayName>EPDataRetrival</DisplayName>
+    <LastModifiedAt>1546455804730</LastModifiedAt>
+    <LastModifiedBy>bibin.vijayaratnan@newellco.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:8fc243647ba0f0934ef98ccb4bf6f0459385daa26a09fd4c110353599dd5ad1f528f0b0604c891481f0ad6ca366570a8559341d2a29b4585044410b40ea31569</ManifestVersion>
+    <Policies>
+        <Policy>Assign-Auth-Headers</Policy>
+        <Policy>Assign-Target-URL</Policy>
+        <Policy>Assign-guest-login-parms</Policy>
+        <Policy>Call-Authenticate-Service</Policy>
+        <Policy>Extract-Access-Token</Policy>
+        <Policy>Extract-Header-Values</Policy>
+        <Policy>Extract-SC-Target-URL</Policy>
+        <Policy>Extract-base-target-URL</Policy>
+        <Policy>ResponseHandler</Policy>
+        <Policy>Update-target-URL</Policy>
+        <Policy>Verify-API-Key-EPDataRetrieval</Policy>
+        <Policy>add-cors</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://responsehandler.js</Resource>
+        <Resource>jsc://updatetargeturl.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

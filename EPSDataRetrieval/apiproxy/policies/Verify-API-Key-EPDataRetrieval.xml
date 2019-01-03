@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VerifyAPIKey async="false" continueOnError="false" enabled="true" name="Verify-API-Key-EPDataRetrieval">
+    <DisplayName>Verify API Key-EPDataRetrieval</DisplayName>
+    <Properties/>
+    <APIKey ref="request.header.APIKey"/>
+</VerifyAPIKey>

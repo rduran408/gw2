@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules>
+        <FaultRule name="SC-InternalError">
+            <Condition>(fault.name Matches "ExecutionFailed") </Condition>
+            <Step>
+                <Name>Raise-SC-error</Name>
+            </Step>
+        </FaultRule>
+        <FaultRule name="SC-BadReq">
+            <Condition>(request.formparam.grant_type != "password") </Condition>
+            <Step>
+                <Name>Raise-bad-grant-type</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    <Flows>
+        <Flow name="OptionsPreFlight">
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>add-cors</Name>
+                </Step>
+            </Response>
+            <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+        </Flow>
+        <Flow name="GetAccessToken">
+            <Description>Flow to get the OAuth access token</Description>
+            <Request>
+                <Step>
+                    <Name>Verify-API-Key-EPAuthenticateUser</Name>
+                </Step>
+                <Step>
+                    <Name>Assign-SC-parms</Name>
+                </Step>
+                <Step>
+                    <Name>Extract-target-URL</Name>
+                </Step>
+                <Step>
+                    <Name>Call-Authenticate-Service</Name>
+                    <Condition>request.formparam.grant_type = "password"</Condition>
+                </Step>
+                <Step>
+                    <Name>Extract-Access-Token</Name>
+                </Step>
+                <Step>
+                    <Name>AssignPayload</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>ResponseHandler</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/accesstoken")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/v1/authenticate</BasePath>
+        <Properties/>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="NoRoute">
+        <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+    </RouteRule>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>
