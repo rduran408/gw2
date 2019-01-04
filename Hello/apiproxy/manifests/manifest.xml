@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Raise-Fault-1" version="SHA-512:5d7d65aac60b3b4f73491db4be2ce40c540c9862db1e265bed7378c4bf301048905e3cb8da5a941c1841002952ed19e9c81a5a945a9fac7abda2d0bbb38debcd"/>
+        <VersionInfo resourceName="SOAP-Message-Validation-1" version="SHA-512:2055413c41f21df542cf9184dc3cacdcb1d28de96dd8c225aa15b2d0456d99ecd602ceed69647e516e9e8581e06df1f08f524134348ebe6c0b9fe5a90ca30d1b"/>
+        <VersionInfo resourceName="remove-query-param-apikey" version="SHA-512:71988af35b9fee246141215a7ebf04e423a0f48233d1d597a683721766846f568a2df80ac7986fd69e63481d9fb34cbde5c541891d663d2fd7cb14f2447591e4"/>
+        <VersionInfo resourceName="verify-api-key" version="SHA-512:baef0665af4ec6cd4acb8f7c01740c3804079d5f068f6370dc28c4b0354fb54045fdd9d631558f784ec99c1e89a3e968fa1c1054b41ad11ce6223c9e17201dcf"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:1e75031252167710822748fc072deecf33d1071d28981870ba037de4f0b4d3cacf2c60f4a13c49ef9a67215df2bc8ab9c36d5398350d7940b6425b345b496145"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:67d2ae14ba650633615784fd4a814836c0ea1d85dcd1d9e21c8afbea3c5b59269b4cc114d2600cd1eed240781c7f6bbc4cca556544746810d4e9492be5908c98"/>
+        <VersionInfo resourceName="wsdl://SOAP-Message-Validation-1.wsdl" version="SHA-512:7da6e47a7228422b00a3b5835029399387b6daa29c5d872d6d444717a763ffe112127522015a4a62df3904c7b24cf4e8801fe67f6b4d60fb5e4e53778e5cb6c5"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:6fe866deef825506072617cbdb5181a18a08a7fdf2ce9a88868fe2081207ac24d5badafaf3bb741a2022246e4871edd6e67126e34ed2015bc68ff3b401876cfe"/>
+        <VersionInfo resourceName="foo" version="SHA-512:a10772b3723085f6079ebf9759afbcebf77ff340b36aa3fd2d3ee6697da49c7fb9f68d1126f22933da0bd6d2028fbf4273e642fdf12fd68a25bafd3e01594807"/>
+    </TargetEndpoints>
+</Manifest>
